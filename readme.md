@@ -7,7 +7,9 @@ Welcome to **Folder-Fathom**! This humble script is here to lend you a hand when
 To embark on the journey of folder exploration, simply run the script with the folder path as the only argument:
 
 ```bash
-./explore_folders.sh <folder_path>
+git clone https://github.com/mlibre/Folder-Fathom
+cd Folder-Fathom
+./script.bash <folder_path>
 ```
 
 If you're ever unsure, just call it without any arguments, and a friendly reminder will appear to guide you.
