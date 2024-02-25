@@ -1,4 +1,4 @@
-# Project Name
+# Folder-Fathom
 
 Welcome to **Folder-Fathom**! This humble script is here to lend you a hand when you're in need of exploring the depths of a folder's structure and content. It's not flashy, but it gets the job done with a touch of fun!
 
