@@ -21,7 +21,19 @@ If you're ever unsure, just call it without any arguments, and a friendly remind
 
 ## Installation
 
-No installation needed! Just clone the repository and run the script.
+To make Folder-Fathom available system-wide, use the provided `install.sh` script. After cloning the repository, navigate to the `Folder-Fathom` directory and execute the following command:
+
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+## Uninstallation
+
+```bash
+chmod +x uninstall.bash
+./uninstall.bash
+```
 
 ## Dependencies
 
