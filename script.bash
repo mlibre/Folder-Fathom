@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Check if argument is provided
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <folder_path>"
+# Check if arguments are provided
+if [ $# -lt 1 ] || [ $# -gt 2 ]; then
+    echo "Usage: $0 <folder_path> [output_file]"
+    echo "Example: $0 ~/Documents/ output.txt"
     exit 1
 fi
 
@@ -13,10 +14,12 @@ if [ ! -d "$1" ]; then
 fi
 
 # Define output file
-output_file="output.txt"
+output_file=${2:-output.txt}
 
-# Remove existing output file
-rm "$output_file"
+# Remove existing output file if it exists
+if [ -f "$output_file" ]; then
+    rm "$output_file"
+fi
 
 # Function to traverse folder recursively
 traverse_folder() {

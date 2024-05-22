@@ -9,10 +9,11 @@ To embark on the journey of folder exploration, simply run the script with the f
 ```bash
 git clone https://github.com/mlibre/Folder-Fathom
 cd Folder-Fathom
-./script.bash <folder_path>
+./script.bash <folder_path> [output_file]
 
 # For example:
 ./script.bash /home/user/Documents/folder_to_explore
+./script.bash /home/user/Documents/folder_to_explore output.txt
 ```
 
 ## Features
