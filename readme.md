@@ -1,6 +1,6 @@
 # Folder-Fathom
 
-Welcome to **Folder-Fathom**! This humble script is here to lend you a hand when you're in need of exploring the depths of a folder's structure and content. It's not flashy, but it gets the job done with a touch of fun!
+Welcome to **Folder-Fathom**! This humble script is here to lend you a hand when you're exploring the depths of a folder's structure and content. It's not flashy, but it gets the job done with a touch of fun!
 
 ## Usage
 
@@ -10,9 +10,10 @@ To embark on the journey of folder exploration, simply run the script with the f
 git clone https://github.com/mlibre/Folder-Fathom
 cd Folder-Fathom
 ./script.bash <folder_path>
-```
 
-If you're ever unsure, just call it without any arguments, and a friendly reminder will appear to guide you.
+# For example:
+./script.bash /home/user/Documents/folder_to_explore
+```
 
 ## Features
 
@@ -24,6 +25,14 @@ If you're ever unsure, just call it without any arguments, and a friendly remind
 To make Folder-Fathom available system-wide, use the provided `install.sh` script. After cloning the repository, navigate to the `Folder-Fathom` directory and execute the following command:
 
 ```bash
+sudo curl -sSL https://raw.githubusercontent.com/mlibre/Folder-Fathom/main/direct-install.sh | bash
+```
+
+Or, if you prefer, you may install the script manually:
+
+```bash
+git clone https://github.com/mlibre/Folder-Fathom
+cd Folder-Fathom
 chmod +x install.sh
 ./install.sh
 ```
