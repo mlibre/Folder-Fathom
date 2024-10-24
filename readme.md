@@ -12,20 +12,29 @@ cd Folder-Fathom
 chmod +x install.sh
 ./install.sh
 
-folderFanthom <folder_path> [output_file] [--include-file-info]
+folderFathom <folder_path> [output_file]
 # Or
-script.bash <folder_path> [output_file] [--include-file-info]
+script.bash <folder_path> [output_file]
+```
 
-# Examples:
-folderFanthom .
+### Examples
+
+```bash
+# Explore the current directory and save the output to output.txt
+folderFathom .
+
+# Explore a specific directory and save to a custom output file
 ./script.bash /home/user/Documents/folder_to_explore output.txt
-./script.bash /home/user/Documents/folder_to_explore output.txt --include-file-info
+
+# Explore a specific directory with custom output, using the default output file
+./script.bash /home/user/Documents/folder_to_explore
 ```
 
 ## Features
 
 - **Folder Structure Overview**: Ever felt lost in a labyrinth of folders? Fear not! This script provides a clear map of the folder structure, helping you find your way.
 - **Content Inspection**: Dive deep into the files within the folders. See their extensions, their contents, and unravel their mysteries.
+- **Ignore Patterns Support**: Automatically excludes files and directories listed in `.ignore` and `.gitignore` files, making it easier to focus on relevant content.
 
 ## Installation
 
@@ -45,6 +54,8 @@ chmod +x install.sh
 ```
 
 ## Uninstallation
+
+To uninstall, run:
 
 ```bash
 chmod +x uninstall.bash
