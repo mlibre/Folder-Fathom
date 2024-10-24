@@ -9,10 +9,15 @@ To embark on the journey of folder exploration, simply run the script with the f
 ```bash
 git clone https://github.com/mlibre/Folder-Fathom
 cd Folder-Fathom
-./script.bash <folder_path> [output_file] [--include-file-info]
+chmod +x install.sh
+./install.sh
 
-# For example:
-./script.bash /home/user/Documents/folder_to_explore
+folderFanthom <folder_path> [output_file] [--include-file-info]
+# Or
+script.bash <folder_path> [output_file] [--include-file-info]
+
+# Examples:
+folderFanthom /home/user/Documents/folder_to_explore
 ./script.bash /home/user/Documents/folder_to_explore output.txt
 ./script.bash /home/user/Documents/folder_to_explore output.txt --include-file-info
 ```
