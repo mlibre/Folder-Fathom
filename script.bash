@@ -38,6 +38,9 @@ read_ignore_patterns() {
    # Format patterns for find command
    local find_excludes=""
    for pattern in "${patterns[@]}"; do
+      # Remove trailing slashes
+      pattern=${pattern%/}
+      
       # Escape special characters for find command
       escaped_pattern=$(printf '%s\n' "$pattern" | sed 's/[\/&]/\\&/g')
       find_excludes+="! -path \"*$escaped_pattern\" "
@@ -45,6 +48,7 @@ read_ignore_patterns() {
    
    echo "$find_excludes"
 }
+
 
 # Function to traverse folder recursively
 traverse_folder() {
