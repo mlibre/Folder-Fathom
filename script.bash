@@ -26,12 +26,14 @@ read_ignore_patterns() {
    
    # Read .ignore file if it exists
    if [ -f "$folder/.ignore" ]; then
-      mapfile -t patterns < "$folder/.ignore"  # Read all lines into the array
+      # Read lines and filter out empty ones
+      mapfile -t patterns < <(grep -v '^\s*$' "$folder/.ignore")
    fi
    
    # Read .gitignore file if it exists
    if [ -f "$folder/.gitignore" ]; then
-      mapfile -t git_patterns < "$folder/.gitignore"  # Read all lines into the array
+      # Read lines and filter out empty ones
+      mapfile -t git_patterns < <(grep -v '^\s*$' "$folder/.gitignore")
       patterns+=("${git_patterns[@]}")  # Combine gitignore patterns with other patterns
    fi
    
@@ -48,6 +50,7 @@ read_ignore_patterns() {
    
    echo "$find_excludes"
 }
+
 
 
 # Function to traverse folder recursively
