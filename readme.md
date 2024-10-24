@@ -17,7 +17,7 @@ folderFanthom <folder_path> [output_file] [--include-file-info]
 script.bash <folder_path> [output_file] [--include-file-info]
 
 # Examples:
-folderFanthom /home/user/Documents/folder_to_explore
+folderFanthom .
 ./script.bash /home/user/Documents/folder_to_explore output.txt
 ./script.bash /home/user/Documents/folder_to_explore output.txt --include-file-info
 ```
